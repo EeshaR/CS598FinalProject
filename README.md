@@ -1,7 +1,8 @@
 # CS598FinalProject
 
 Project overview
-This repo reproduces the temporal‑shift pipeline from Ji et al. (CHIL 2023) on the public Pima Indians Diabetes dataset. I create synthetic year labels (2016 and 2017), train logistic‑regression and decision‑tree models, measure performance drift, run a permutation test, discover subpopulations with high loss differences, and run an ablation on logistic‑regression regularization.
+
+This repo reproduces the temporal‑shift pipeline from Ji et al. (CHIL 2023) on the public Pima Indians Diabetes dataset. I created synthetic year labels (2016 and 2017), trained logistic‑regression and decision‑tree models, measured performance drift, ran a permutation test, found subpopulations with high loss differences, and ran an ablation on logistic‑regression regularization.
 
 Files and what they do
 
@@ -30,15 +31,13 @@ requirements.txt
 python dependencies: pandas 1.5.2, numpy 1.23.5, scikit‑learn 1.2.2, matplotlib 3.7.1, joblib 1.2.0.
 
 How to run
-clone the repo
-git clone https://github.com/yourusername/temporal-shift-repro.git
-pip install -r requirements.txt
-
-run the pipeline step by step
+1. git clone https://github.com/yourusername/temporal-shift-repro.git
+2. pip install -r requirements.txt
+3. run the pipeline step by step
 python src/preprocessing.py
 python src/modeling.py
 python src/evaluation.py
 python src/subpopulation.py
 python src/ablation.py
 
-You can also directly download the .ipynb notebook and run it from an editor or Google Collab to see the output results. 
+Atlternatively, you can also directly download the .ipynb notebook and run it from an editor or Google Collab to see the output results. 
